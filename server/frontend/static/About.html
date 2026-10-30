@@ -1,7 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Cars Dealership</title>
+  <!-- Link the style sheets here -->
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -25,44 +32,57 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
+  <div class="card" style="width: 85%; margin: auto; margin-top: 3%; margin-bottom: 3%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px;">
+    <div class="banner p-4 text-center bg-light" name="about-header" style="border-bottom: 2px solid darkturquoise;">
+      <h1 class="display-5 fw-bold" style="color: #0b5cab;">Welcome to Best Cars Dealership</h1>
+      <p class="lead text-muted" style="max-width: 800px; margin: auto;">
+        We are a premier national automobile retailer with branches across all 50 states in the United States. Our mission is to deliver exceptional vehicle quality, transparent pricing, and an unmatched customer service experience.
+      </p>
     </div>
     
-</div>
+    <div class="container py-4">
+      <h3 class="text-center mb-4 text-secondary">Meet Our Leadership Team</h3>
+      <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+        
+        <div class="card" style="width: 30%; min-width: 260px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+          <img class="card-img-top" src="/static/person.png" alt="Harsh Manjramkar" style="height: 220px; object-fit: cover; background: #eef2f5;">
+          <div class="card-body text-center">
+            <h5 class="title fw-bold" style="color:#0b5cab;">Harsh Manjramkar</h5>
+            <h6 class="text-primary">Chief Executive Officer</h6>
+            <p class="card-text text-muted" style="font-size: 14px;">
+              Harsh leads the national dealership strategy with over 15 years of automotive leadership, focusing on cutting-edge digital transformation and transparent customer service.
+            </p>
+            <p class="fw-semibold text-secondary" style="font-size: 13px;">harsh.manjramkar@bestcars.com</p>
+          </div>
+        </div>
 
+        <div class="card" style="width: 30%; min-width: 260px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+          <img class="card-img-top" src="/static/person.png" alt="Sarah Jenkins" style="height: 220px; object-fit: cover; background: #eef2f5;">
+          <div class="card-body text-center">
+            <h5 class="title fw-bold" style="color:#0b5cab;">Sarah Jenkins</h5>
+            <h6 class="text-primary">VP of Customer Operations</h6>
+            <p class="card-text text-muted" style="font-size: 14px;">
+              Sarah ensures nationwide operational excellence across all 50 branches, guaranteeing verified customer feedback, prompt dealer servicing, and quality assurance.
+            </p>
+            <p class="fw-semibold text-secondary" style="font-size: 13px;">sarah.jenkins@bestcars.com</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 30%; min-width: 260px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+          <img class="card-img-top" src="/static/person.png" alt="David Chen" style="height: 220px; object-fit: cover; background: #eef2f5;">
+          <div class="card-body text-center">
+            <h5 class="title fw-bold" style="color:#0b5cab;">David Chen</h5>
+            <h6 class="text-primary">Director of Vehicle Inventory</h6>
+            <p class="card-text text-muted" style="font-size: 14px;">
+              David manages relationships with premier domestic and international manufacturers, ensuring certified pre-owned and new vehicle availability across every dealership.
+            </p>
+            <p class="fw-semibold text-secondary" style="font-size: 13px;">david.chen@bestcars.com</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
