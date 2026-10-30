@@ -119,11 +119,11 @@ app.get('/fetchDealer/:id', async (req, res) => {
   try {
     const id = parseInt(req.params.id);
     if (isMongoConnected) {
-      const document = await Dealerships.findOne({ id: id });
-      return res.json(document);
+      const documents = await Dealerships.find({ id: id });
+      return res.json(documents);
     }
     const doc = inMemoryDealerships.find(d => d.id === id);
-    res.json(doc || {});
+    res.json(doc ? [doc] : []);
   } catch (error) {
     res.status(500).json({ error: 'Error fetching documents' });
   }
